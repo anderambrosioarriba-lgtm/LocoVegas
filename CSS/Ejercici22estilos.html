@@ -1,0 +1,87 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 22 - Estructura Completa</title>
+    <style>
+        
+        body { margin: 0; }
+
+        .contenedor-principal {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; 
+            font-family: Arial, sans-serif;
+            font-weight: bold;
+        }
+
+        .cabecera {
+            background-color: #CCCC99;
+            padding: 20px;
+            border: 1px solid #000;
+        }
+
+       
+        .seccion-central {
+            display: flex;
+            flex: 1; 
+            background-color: lavender; 
+        }
+
+        .bloque-columna {
+            padding: 20px;
+            border: 1px solid #000;
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .menu { 
+            flex: 1; 
+        }
+
+        .contenido { 
+            flex: 2; 
+            background-color: #00FF99; 
+        }
+
+        .derecha { 
+            flex: 1; 
+            background-color: red; 
+        }
+
+        .pie {
+            background-color: blue; 
+            color: white;
+            padding: 20px;
+            border: 1px solid #000;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="contenedor-principal">
+        <header class="cabecera">
+            BLOQUE DE CABECERA
+        </header>
+
+        <div class="seccion-central">
+            <nav class="bloque-columna menu">
+                BLOQUE DE MENU
+            </nav>
+            
+            <main class="bloque-columna contenido">
+                BLOQUE DE CONTENIDO
+            </main>
+            
+            <aside class="bloque-columna derecha">
+                BLOQUE DE LA DERECHA
+            </aside>
+        </div>
+
+        <footer class="pie">
+            BLOQUE DE PIE
+        </footer>
+    </div>
+	
+<button><a href="../HTML/ejercicios.html">VOLVER</a></button>
+</body>
+</html>

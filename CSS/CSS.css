@@ -1,0 +1,501 @@
+body {
+     
+      background-color: #0d0717;
+      color: #e8dcc8;
+      font-family:Raleway;
+      font-weight: 300;
+      display: flex;
+      flex-direction: column;
+    
+}
+
+header {
+
+    background: linear-gradient(135deg, rgba(10, 3, 24, 0.7) 0%, rgba(26, 10, 0, 0.7) 100%), 
+                url("../SRC/FondoCasino.jpg");
+
+    background-size: cover;       
+    background-position: center; 
+    
+    padding: 3rem 2rem;
+    text-align: center; 
+}
+
+.titulo {
+	border-bottom: 0px solid rgba(201,168,76,0.25);
+    padding: 1.5rem 2rem;
+    text-align: center;
+    color: #c9a84c;
+    font-size: 75px; 
+    font-family: Anton;
+} 
+
+.titulo-principal {
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 50px; 
+}
+
+.logo {
+    width: 175px;
+    height: 175px;
+    position: absolute; 
+    top: 15px;   
+    left:400px;          
+	mix-blend-mode: screen;
+}
+	
+h3 {
+  color: #ff0000; 
+  font-family: Impact;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 0px #000; 
+}
+
+h1 {
+    text-align: center;
+    color: #c9a84c; 
+    margin-top: 40px;
+    font-family: Cinzel;
+}
+
+nav { 
+    background: rgba(10,3,24,0.97);
+    border-bottom: 1px solid rgba(201,168,76,0.2);
+    position: sticky;
+    top: 0; 
+    z-index: 1000;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; 
+    list-style: none; 
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    display: block;
+    padding: 1rem 1.5rem;
+    color: #9a8a7a;
+    font-family: Cinzel, serif;
+    font-size: 0.85rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: color 0.2s;
+}
+
+nav ul li a:hover, nav ul li a.active {
+    color: #c9a84c; 
+    font-weight: 700; 
+    border-bottom-color: #c9a84c; 
+}
+
+.dropdown-content {
+    display: none;      
+    position: absolute;
+    top: 100%;          
+    right: 0;           
+    background: #1a1423;
+    min-width: 220px;
+    border: 1px solid rgba(201,168,76,0.3);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.5);
+}
+
+.dropdown-content li {
+    width: 100%;
+}
+
+.dropdown-content li a {
+    padding: 0.8rem 1.2rem;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    border-bottom: none;
+    text-align: left;
+}
+
+.dropdown-content li a:hover {
+    background-color: rgba(201, 168, 76, 0.1);
+    border-bottom-color: transparent;
+}
+
+.dropdown:hover .dropdown-content { 
+    display: block; 
+}
+
+.actual {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    border: 2px solid #A627F5;
+    border-radius: 5px;
+    padding: 5px 15px;
+    text-shadow: 0 0 8px #A627F5;
+    box-shadow: inset 0 0 5px #A627F5, 0 0 10px #A627F5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	transform: scale(1.05);
+}
+
+.rojo {
+      min-height: 300px;
+	  display: flex;
+	  justify-content: center;
+      background: linear-gradient(135deg, #0d0717 0%, #2a0a0a 50%, #0d0717 100%);
+      text-align: center;
+	  padding: 3rem 2rem;
+	  position: relative;
+	  overflow: hidden;
+    }
+	
+.ventajas {
+  min-height: 480px;
+  display: flex;
+  flex-direction: column; 
+  align-items: center;    
+  justify-content: center; 
+  
+  background: radial-gradient(circle, #2a0a0a 0%, #0d0717 70%);
+  
+  text-align: center;
+  padding: 3rem 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.diseño-fondo {
+	  position: absolute;
+	  font-size: 18rem;
+	  color: rgba(201,168,76,0.04);
+	  font-family: Cinzel; 
+	}
+	
+.diseño-ventajas {
+	  position: absolute;
+	  font-size: 18rem;
+	  color: rgba(201,168,76,0.04);
+	  font-family: Cinzel; 
+	  justify-content: center;
+	  display: flex;
+	   overflow: hidden;
+	}
+	
+.rojo-text {
+	max-width: 700px;
+	position: relative;
+	z-index: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 1rem;
+	}
+	
+.rojo-text h1 {
+	 font-family: Playfair Display, serif;
+    font-weight: 900;
+    color: #F2E9D0;
+    font-size: 48px;
+    margin: 0;
+    line-height: 1;
+    letter-spacing: -1px; 
+    text-transform: uppercase;
+	}
+	
+.rojo-text h1 span {
+	color: #c9a84c;
+	}
+	
+.rojo-text p { 
+	font-family: Montserrat;
+    font-weight: 100; 
+    color: #A38585;
+    font-size: 18px;
+    max-width: 700px;
+    margin: 20px auto;
+    line-height: 1.4;
+    letter-spacing: 0.5px;
+	}	
+
+.verficacion {
+    text-align: center;
+    color: #c9a84c;
+    font-family: Cinzel;
+    font-size: 20px;
+    background-color: radial-gradient(circle, #2a0a0a 0%, #0d0717 100%);
+    padding-top: 40px;
+}
+
+.contenedor-verificacion {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 40px 20px;
+    background-color: #0a0318;
+}
+
+.card-verificacion {
+    flex: 1;
+    max-width: 400px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(201, 168, 76, 0.3);
+    border-radius: 12px;
+    padding: 30px;
+}
+
+.card-verificacion h3, p{
+    color:white;
+	font-family: Montserrat;
+	
+}
+
+.card-verificacion:hover {
+
+    border-color: rgba(201, 168, 76, 0.6);
+}
+
+.icono {
+    width: 90px;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 20px auto;     
+}
+
+.icono img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.icono-casa img {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+}
+
+.explicacion-titulo {
+  width: 100%; 
+  max-width: 1200px; 
+  margin: 0 auto; 
+  color: #c9a84c;
+  font-family: Cinzel;
+}
+
+.explicacion.lista {
+   
+  text-align: left;   
+  margin-top: 20px;
+  padding-left: 0;   
+  font-size: 23px;
+}
+
+.explicacion.lista ol {
+  color: white;             
+  list-style-position: outside;
+  margin: 0  auto;
+  padding-left:0px;
+  
+}
+
+.explicacion.lista img {
+    width: 450px;         
+    height: 270px;          
+    border-radius: 10px;   
+    margin: 15px 0;        
+    display: block;        
+    border: 1px solid rgba(201, 168, 76, 0.3); 
+}
+
+.pagos{
+	text-align: center;
+    font-family: Cinzel;
+    font-size: 20px;
+	background-color: radial-gradient(circle, #2a0a0a 0%, #0d0717 100%);
+    padding-top: 40px;
+	position: relative;
+	align-items: center;
+	gap: 1rem;
+	margin-left:350px;
+	
+	
+	text-align:center;
+	max-width: 800px;
+	z-index: 1;
+	flex-direction: column;
+
+	
+	
+}
+
+.pagos h1{
+	color:white;
+}
+
+.pagos h2{
+	margin-left:20%;
+}
+
+.pagos h2 span {
+	color: #c9a84c;
+	
+}
+.pagos p{
+	text-align:center;
+	margin-left:20%;
+}
+
+.pagos img{
+	width:720px;
+	height:300px;
+	margin-left:15%;
+	mix-blend-mode: multiply;
+	  
+}
+
+.ver_juegos{
+	
+	background: transparent;
+	border: 1px solid #c5a059; 
+	border-radius: 8px; 
+	color: #c5a059;
+	font-family: Playfair Display;
+	font-size: 18px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	padding: 12px 40px;
+	cursor: pointer;
+	transition: all 0.5s ease
+}
+
+.btn-gold {
+      display: inline-block;
+	  background: linear-gradient(135deg, #c9a84c, #8a5a00);
+      color: #1a0a00;
+	  font-family: 'Cinzel', serif;
+	  font-weight: 700;
+	  font-size: 20px;
+      letter-spacing: 0.1em;
+	  text-transform: uppercase;
+	  padding: 0.85rem 2.2rem;
+      border: none;
+	  border-radius: 4px;
+	  cursor: pointer;
+	  transition: opacity 0.2s, transform 0.15s;
+    }
+	
+.btn-gold:hover { 
+	opacity: 0.85;
+	transform: translateY(-2px);
+	color: #1a0a00;
+ }
+
+footer { 
+    background: linear-gradient(135deg, rgba(10, 3, 24, 0.7) 0%, rgba(26, 10, 0, 0.7) 100%);
+    border-top: 1px solid rgba(201,168,76,0.2);
+    padding: 1.2rem 1rem; 
+    margin-top: auto; 
+}
+
+.footer-inner {
+    max-width: 1100px;
+    margin: 0 auto; 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem; 
+}
+
+.footer-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-col img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+.footer-col:last-child {
+    align-items: flex-end;
+    text-align: right;
+}
+
+.footer-logo {
+    font-family: Cinzel;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.footer-logo span {
+    color: #c9a84c; 
+}
+
+.footer-copy { 
+    color: #9a8a7a;
+    font-size: 0.75rem;
+    line-height: 1.3;
+}
+
+.footer-subtitle { 
+    font-family: Cinzel;
+    text-transform: uppercase; 
+    color: #c9a84c;
+}
+
+.qr {
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin: 2px 0;
+}
+
+.img-footer-map {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    filter: brightness(0.6) contrast(1.2); 
+    mix-blend-mode: lighten;
+}
+
+.clima-display {
+    color: white;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.clima-display p {
+    margin-top: 20px;
+    color: #9a8a7a;
+}
+p, h1, .logo {
+    margin: 0;
+}
+
+	
+

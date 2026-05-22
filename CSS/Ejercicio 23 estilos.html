@@ -1,0 +1,105 @@
+
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 23 - Elecciones Generales</title>
+    <style>
+        
+        .contenedor-general {
+            width: 100%; 
+            height: 600px; 
+            margin: 0 auto; 
+            display: flex;
+            flex-direction: column;
+            border: 1px solid #000;
+            background-color: #CCCC99; 
+        }
+
+        
+        .bloque {
+            padding: 10px;
+            text-align: center;
+            border-bottom: 1px solid #000;
+        }
+
+        h1 { text-decoration: underline; margin: 0; }
+        h3 { margin: 5px 0; }
+
+        .titulo-partidos {
+            display: inline-block;
+            border: 1px solid #000; 
+            padding: 5px;
+        }
+
+       
+        .cuerpo-central {
+            display: flex;
+            flex: 1; 
+        }
+
+        .columna-izquierda {
+            width: 40%;
+            border-right: 1px solid #000;
+            text-align: left;
+            padding: 20px;
+        }
+
+        .columna-derecha {
+            width: 60%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+       
+        ul { list-style-type: disc; }
+        a { color: black; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+
+        .pie {
+            border-top: 1px solid #000;
+            border-bottom: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="contenedor-general">
+        <header class="bloque">
+            <h1>ELECCIONES GENERALES</h1>
+        </header>
+
+        <div class="cuerpo-central">
+            <section class="columna-izquierda">
+                <h3 class="titulo-partidos">PARTIDOS POLÍTICOS</h3>
+                <ul>
+                    <li></li><a href="https://www.psoe.es" target="_blank">PSOE</a></li>
+                    <li><a href="https://www.pp.es" target="_blank">PP</a></li>
+                    <li><a href="https://www.podemos.info" target="_blank">PODEMOS</a></li>
+                </ul>
+            </section>
+
+            <section class="columna-derecha">
+               
+				<img src="partidos-logos.png" style="border-style:none" usemap="#partidos-logos" />
+            <div>
+					<map id="partidos-logos" name="partidos-logos">
+					<area shape="rect" alt="" coords="0,1,79,64" href="https://www.pp.es" title="" target="_blank" />
+					<area shape="rect" alt="" coords="87,4,155,58" href="https://www.psoe.es" target="_blank">
+					<area shape="rect" alt="" coords="163,0,241,63" href="https://www.podemos.info" title="" target="_blank" />
+
+
+					</map>
+			</div>
+            </section>
+        </div>
+
+        <footer class="bloque pie">
+            <h3>HASTA PRONTO</h3>
+        </footer>
+    </div>
+
+
+<button><a href="../HTML/ejercicios.html">VOLVER</a></button>
+</body>
+</html>

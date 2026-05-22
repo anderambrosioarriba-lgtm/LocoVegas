@@ -1,0 +1,105 @@
+<html>
+<head>
+    
+    <title>Visite Euskadi</title>
+    <style>
+       
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial;
+        }
+
+        
+        .main-container {
+            display: flex;
+            height: 100vh;
+        }
+
+        
+        .sidebar {
+            width: 40%;
+            background-color: #CCCC99;
+            padding: 20px;
+            text-align: center;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .sidebar h1 {
+            margin-top: 0;
+        }
+
+        .sidebar img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+
+        .content-text {
+            font-size: 16pt;
+            font-weight: bold;
+            text-align: left;
+            width: 100%;
+        }
+
+        .link-list {
+            text-align: left;
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        
+        .viewer {
+            width: 60%;
+            background-color: white;
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none; /* Quitar bordes */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="main-container">
+        <aside class="sidebar">
+            <h1>VISITE EUSKADI</h1>
+
+            <img src="../SRC/Euskadi.png" style="border-style:none" usemap="#Euskadi" />
+
+            <div class="content-text">
+                Elige tu provincia preferida
+            </div>
+
+            <ul class="link-list">
+                <li><a href="https://www.bizkaia.eus" target="visor">Bizkaia</a></li>
+                <li><a href="https://www.gipuzkoa.eus" target="visor">Gipuzkoa</a></li>
+                <li><a href="https://www.araba.eus" target="visor">Araba</a></li>
+            </ul>
+        </aside>
+
+        <section class="viewer">
+            <iframe name="visor" src="about:blank"></iframe>
+        </section>
+    </div>
+
+<div>
+<map id="via.placeholder" name="via.placeholder">
+<area shape="poly" alt="" coords="125,94,131,82,138,89,152,76,148,68,159,61,167,57,161,46,162,38,170,41,178,28,181,23,172,10,161,20,157,18,154,22,150,22,138,25,129,25,109,21,110,28,101,39,102,51,99,58,101,69,91,75,95,81,110,81,116,83"href="https://www.gipuzkoa.eus" title="" />
+<area shape="poly" alt="" coords="126,92,130,103,124,109,128,119,117,116,123,127,117,136,117,132,108,130,101,141,111,142,111,152,106,160,94,160,84,157,80,147,83,142,75,137,65,146,63,132,59,125,55,124,48,116,45,111,39,112,36,113,36,107,33,104,33,99,23,100,20,91,20,88,27,83,31,83,36,87,39,90,44,90,45,87,48,83,43,79,42,75,39,75,36,73,35,70,35,66,35,63,32,61,33,57,32,53,30,48,36,48,37,50,41,52,43,52,46,48,46,45,50,44,52,44,52,47,52,53,53,58,58,63,62,66,67,68,72,69,77,70,80,70,85,69,89,69,87,65,84,60,90,60,96,59,100,58,102,57,99,59" href="Ejercicio%2025%20estilos.html" title="" />
+<area shape="poly" alt="" coords="109,19,100,12,94,10,85,8,82,5,84,12,83,7,75,2,71,2,67,2,55,2,47,3,50,11,50,15,48,18,44,16,40,15,37,13,35,16,35,18,35,20,32,22,28,23,20,24,11,24,7,28,3,38,6,48,13,48,20,47,20,42,22,40,27,40,35,44,37,46,40,47,44,46,48,44,51,43,52,46,55,50,54,53,55,59,59,61,65,64,71,69,78,70,83,70,87,68,85,61,92,60,97,59,101,57,102,53,101,47,101,42,101,39" href="Ejercicio%2025%20estilos.html" title="" />
+<area shape="default" nohref="nohref" alt="" />
+</map>
+</div>
+
+<button><a href="../HTML/ejercicios.html">VOLVER</a></button>
+
+</body>
+</html>
